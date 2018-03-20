@@ -40,12 +40,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.ExperienceExplorer, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.ExperienceExplorer.9.0.0\lib\Sitecore.ExperienceExplorer.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceExplorer.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.ExperienceExplorer.Core.9.0.0\lib\Sitecore.ExperienceExplorer.Core.dll</HintPath>
+    <Reference Include="Sitecore.ExperienceExplorer.Business">
+      <HintPath>..\packages\SC.Sitecore.ExperienceExplorer.Business.9.0.0\lib\Sitecore.ExperienceExplorer.Business.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
