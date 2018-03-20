@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExperienceExplorer\Pipelines\RenderLayout\InjectExplorerControl.cs" />
-    <Compile Include="InjectExperienceExplorerControlPipeline.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
