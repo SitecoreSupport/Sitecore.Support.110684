@@ -7,5 +7,6 @@ namespace Sitecore.Support
 {
 	public class InjectExperienceExplorerControlPipeline
 	{
+		public InjectExperienceExplorerControlPipeline() { }
 	}
 }
