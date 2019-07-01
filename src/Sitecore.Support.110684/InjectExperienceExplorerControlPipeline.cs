@@ -48,7 +48,14 @@ namespace Sitecore.Support.ExperienceExplorer.Business.Pipelines.RenderLayout
                     SettingsHelper.ExplorerWasAccessed = true;
                     Control control = null;
                     if (Sitecore.Context.Page.Page.Master != null)
-                        control = Sitecore.Web.WebUtil.FindControlOfType(Sitecore.Context.Page.Page.Master, typeof(HtmlForm));
+                    {
+                      var masterPage = Context.Page.Page.Master;
+                      while (masterPage.Master != null)
+                      {
+                        masterPage = masterPage.Master;
+                      }
+                      control = Sitecore.Web.WebUtil.FindControlOfType(masterPage, typeof(HtmlForm));
+                    } 
                     else
                         control = Sitecore.Web.WebUtil.FindControlOfType(Sitecore.Context.Page.Page, typeof(HtmlForm));
                     if (control == null)
